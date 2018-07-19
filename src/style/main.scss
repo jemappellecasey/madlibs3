@@ -91,15 +91,38 @@
     display: grid;
     // grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
+    font-family: 'Montserrat';
+    text-align: center;
+    
+    
     &__type {
         grid-column: input-s/input-e;
+
+        border-top: 1px solid #b3b3b3;
+        color: #b3b3b3;
+        font-size: 12px;
+        font-weight: 300;
     }
 
     input {
         grid-column: input-s/input-e;
+        border: none;
+        text-align: center;
+        font-weight: 600;
+
+        // width: 190px;
+        // height: 40px;
     }
 
     &__number {
         grid-column: number-s/number-e;
+        background-color: #00cb79;
+        color: mintcream;
+        font-size: 18px;
+
+        text-align: center;
+        padding-top: 4.5px;
+
+        border-radius: 50%;
     }
 }
