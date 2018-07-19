@@ -83,7 +83,7 @@ class Card extends Component {
                         }) 
                     }
                 </div>
-                <button>{this.state.contentVisible ? 'Clear' : 'Generate Madlib' }</button>
+                <button className={`card__${!this.state.contentVisible ? 'generate' : 'clear'}`} type="submit">{this.state.contentVisible ? 'Clear' : 'Generate Madlib' }</button>
                 {
                     this.state.contentVisible ? <Content data={this.state} /> : ''
                 }
