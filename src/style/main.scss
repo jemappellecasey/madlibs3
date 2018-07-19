@@ -1,8 +1,11 @@
+
+
 .home {
     position: relative;
 
     background-color: rgba(207, 207, 207, .1);
     display: grid;
+    min-width: 1400px;
 
 
     justify-items: center;
@@ -11,7 +14,12 @@
 }
 
 .header {
+    font-family: 'Montserrat';
+    color: ghostwhite;
     align-self: center;
+    text-align: center;
+
+
 
     &__skew {
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 100%);
@@ -22,6 +30,7 @@
         left: 0;
         position: absolute;
         height: 550px;
+        min-width: 1460px;
         width: 100vw;
         background-color: #444;
     }
@@ -35,8 +44,26 @@
         left: 0;
         position: absolute;
         height: 565px;
+        min-width: 1460px;
         width: 100vw;
         background-color: #00cb79;
+    }
+
+    
+    
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+
+    }
+
+    p {
+        opacity: .75;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 19px;
+        width: 403px;
     }
 }
 
